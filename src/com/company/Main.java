@@ -80,9 +80,7 @@ public class Main {
     public static boolean userChecker(String username, String password){
         boolean check = false;
         for (int i = 0; i < users.length; i++) {
-            String nam = users[i].getUsername();
-            String pas = users[i].getPassword();
-            if(nam.equals(username) && pas.equals(password)){
+            if(users[i].getUsername().equals(username) && users[i].getPassword().equals(password)){
                 check = true;
                 break;
             }
