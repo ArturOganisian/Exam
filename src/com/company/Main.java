@@ -29,13 +29,13 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Enter username");
-                    String userName = scn.next();
+                    String log = scn.next();
 
                     System.out.println("Enter password");
-                    String pass = scn.next();
+                    String pas = scn.next();
 
 
-                    if(userChecker(userName,pass) == false){
+                    if(userChecker(log,pas) == false){
                         System.out.println("Wrong UserName or Password");
                         break;
                     }
@@ -67,9 +67,10 @@ public class Main {
         else {
             for (int i = 0; i < users.length; ++i) {
                 if (users[i] == null) {
+                    users[i] = user;
                     user.setUsername(log);
                     user.setPassword(pas);
-                    users[i] = user;
+
                     userCount++;
                     return;
                 }
@@ -79,7 +80,9 @@ public class Main {
     public static boolean userChecker(String username, String password){
         boolean check = false;
         for (int i = 0; i < users.length; i++) {
-            if(users[i].getUsername() == username && users[i].getPassword() == password){
+            String nam = users[i].getUsername();
+            String pas = users[i].getPassword();
+            if(nam.equals(username) && pas.equals(password)){
                 check = true;
                 break;
             }
