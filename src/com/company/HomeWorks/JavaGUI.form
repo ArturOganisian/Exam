@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.HomeWorks.JavaGUI">
+  <grid id="27dc6" binding="Main" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="10" vgap="10">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="633" height="442"/>
+    </constraints>
+    <properties/>
+    <border type="line" title-position="1">
+      <font/>
+      <title-color color="-4473925"/>
+      <color color="-4490227"/>
+    </border>
+    <children>
+      <component id="318e1" class="javax.swing.JButton" binding="logInButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="LogIn"/>
+        </properties>
+      </component>
+      <component id="ab6e0" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exit"/>
+        </properties>
+      </component>
+      <component id="9b722" class="javax.swing.JLabel" binding="MainGUI">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="28"/>
+          <text value="Main GUI"/>
+        </properties>
+      </component>
+      <component id="50ee5" class="javax.swing.JButton" binding="Register">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Register"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
